@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anisha Web Solutions — Modern Portfolio</title>
+  <meta name="description" content="A modern, responsive, fully-styled single-page website (HTML/CSS/JS) - ready to customize." />
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="script.js" defer></script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%233F51B5'/%3E%3Ctext x='50' y='57' font-size='42' text-anchor='middle' fill='white' font-family='sans-serif'%3E★%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#" aria-label="Home">
+          <svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#00b4d8"/>
+                <stop offset="1" stop-color="#3f51b5"/>
+              </linearGradient>
+            </defs>
+            <rect width="48" height="48" rx="10" fill="url(#g)"></rect>
+            <text x="24" y="31" text-anchor="middle" font-size="22" fill="#fff" font-family="Arial, Helvetica, sans-serif">AWS</text>
+          </svg>
+        </a>
+        <span class="brand-text">Anisha Web Solutions</span>
+      </div>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="btn icon-btn" aria-pressed="false" title="Toggle theme">🌙</button>
+        <button id="menuBtn" class="btn icon-btn menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Beautifully crafted websites — built for speed & clarity.</h1>
+          <p class="lead">I design and develop responsive, accessible web experiences using clean HTML, modern CSS, and vanilla JavaScript. Fast, maintainable, delightful.</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="#contact">Let's talk</a>
+            <a class="btn ghost" href="#portfolio">See portfolio</a>
+          </div>
+          <ul class="stats">
+            <li><strong>10+</strong><span>Projects</span></li>
+            <li><strong>5+</strong><span>Years</span></li>
+            <li><strong>100%</strong><span>Responsive</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-art">
+          <div class="card mockup" aria-hidden="true">
+            <div class="window">
+              <div class="dot red"></div>
+              <div class="dot amber"></div>
+              <div class="dot green"></div>
+            </div>
+            <div class="screen">
+              <h3>Project Dashboard</h3>
+              <div class="widgets">
+                <div class="widget w1">Visitors<br><span>1.2k</span></div>
+                <div class="widget w2">Conversion<br><span>4.3%</span></div>
+                <div class="widget w3">Revenue<br><span>$2.4k</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section features">
+      <div class="container">
+        <h2 class="section-title">Features</h2>
+        <p class="section-sub">Everything you need to launch a modern website — thoughtfully built.</p>
+        <div class="features-grid">
+          <article class="feature">
+            <div class="icon">⚡</div>
+            <h3>Performance</h3>
+            <p>Optimized markup and CSS for fast paint times and snappy UX on mobile and desktop.</p>
+          </article>
+          <article class="feature">
+            <div class="icon">🎨</div>
+            <h3>Design System</h3>
+            <p>Reusable components, consistent spacing, and thoughtful color system for easy scaling.</p>
+          </article>
+          <article class="feature">
+            <div class="icon">🔒</div>
+            <h3>Accessibility</h3>
+            <p>Semantic HTML, keyboard-friendly controls, and strong color contrast for inclusivity.</p>
+          </article>
+          <article class="feature">
+            <div class="icon">🧩</div>
+            <h3>Vanilla JS</h3>
+            <p>Small, dependency-free JavaScript to keep things predictable and maintainable.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section portfolio">
+      <div class="container">
+        <h2 class="section-title">Selected Work</h2>
+        <p class="section-sub">Clickable previews — open to view details.</p>
+        <div class="portfolio-grid">
+          <button class="portfolio-item" data-title="E-Commerce UI" data-desc="A clean e-commerce product page with accessible product options." aria-haspopup="dialog">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='500' viewBox='0 0 800 500'%3E%3Crect width='800' height='500' fill='%23f8f9fb'/%3E%3Ctext x='50%25' y='50%25' font-size='28' fill='%238c9aa8' text-anchor='middle' font-family='Arial'%3EE-Commerce UI%3C/text%3E%3C/svg%3E" alt="">
+            <div class="pi-meta">
+              <h4>E-Commerce UI</h4>
+              <p>Product page & checkout flow</p>
+            </div>
+          </button>
+
+          <button class="portfolio-item" data-title="SaaS Dashboard" data-desc="Interactive widgets and responsive grid for analytics." aria-haspopup="dialog">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='500' viewBox='0 0 800 500'%3E%3Crect width='800' height='500' fill='%23f1f3f8'/%3E%3Ctext x='50%25' y='50%25' font-size='28' fill='%238c9aa8' text-anchor='middle' font-family='Arial'%3ESaaS Dashboard%3C/text%3E%3C/svg%3E" alt="">
+            <div class="pi-meta">
+              <h4>SaaS Dashboard</h4>
+              <p>Analytics & charts</p>
+            </div>
+          </button>
+
+          <button class="portfolio-item" data-title="Landing Page" data-desc="High-converting marketing landing page with animations." aria-haspopup="dialog">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='500' viewBox='0 0 800 500'%3E%3Crect width='800' height='500' fill='%23f6f8fb'/%3E%3Ctext x='50%25' y='50%25' font-size='28' fill='%238c9aa8' text-anchor='middle' font-family='Arial'%3ELanding Page%3C/text%3E%3C/svg%3E" alt="">
+            <div class="pi-meta">
+              <h4>Landing Page</h4>
+              <p>Marketing & lead gen</p>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-content" role="document">
+          <button class="modal-close" aria-label="Close modal">✕</button>
+          <div class="modal-body">
+            <h3 id="modalTitle">Title</h3>
+            <p id="modalDesc">Description</p>
+            <div class="modal-screenshot" aria-hidden="true">
+              <svg width="600" height="360" viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg">
+                <rect width="600" height="360" fill="#eef2f8"></rect>
+                <text x="300" y="180" text-anchor="middle" fill="#9aa7b5" font-size="22">Project preview</text>
+              </svg>
+            </div>
+            <div class="modal-actions">
+              <a class="btn primary" href="#" onclick="alert('Open demo (placeholder)');return false;">Open demo</a>
+              <a class="btn ghost" href="#" onclick="alert('View details (placeholder)');return false;">View details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <h2 class="section-title">What clients say</h2>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial">
+            <p>"Fast delivery and excellent communication. The site conversion lifted 18% after launch."</p>
+            <footer>— Jamie R., Product Lead</footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p>"Accessible and beautiful. We had zero accessibility issues in our audit."</p>
+            <footer>— Priya S., Head of Marketing</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form id="contactForm" action="https://formspree.io/f/xdklqobl" method="POST">
+          <label>
+            Your email:
+            <input type="email" name="email" required>
+            <div class="error"></div>
+          </label>
+          <label>
+            Your message:
+            <textarea name="message" required></textarea>
+            <div class="error"></div>
+          </label>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Anisha Web Solutions — Built with care.</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#home">Top</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
